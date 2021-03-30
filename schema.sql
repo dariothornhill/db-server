@@ -1,10 +1,8 @@
-DROP TABLE IF EXISTS people;
+DROP TABLE IF EXISTS locations;
 
-CREATE TABLE people (
+CREATE TABLE locations (
     id SERIAL PRIMARY KEY,
-    first_name VARCHAR(255),
-    last_name VARCHAR(255)
+    display_name VARCHAR(255),
+    city VARCHAR(255)
 );
 
-INSERT INTO people (first_name, last_name) VALUES ('Dario', 'Thornhill');
-INSERT INTO people (first_name, last_name) VALUES ('Osama', 'Noufal');
